@@ -64,6 +64,12 @@ res.render('projects.hbs', {
 });
 });
 
+app.get('/goto', (req, res) => {
+ res.render('goto.hbs', {
+   titlepage: 'GOTO'
+ });
+});
+
 app.get('/bad', (req, res) => {
   res.send({bad: 'Bad request'});
 
